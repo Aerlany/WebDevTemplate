@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.modules.project_information.mapper.ProjectInformationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.modules.project_information.model.ProjectInformation">
+        <id column="id" property="id" />
+        <id column="project_code" property="projectCode" />
+        <result column="project_name" property="projectName" />
+        <result column="project_leader" property="projectLeader" />
+        <result column="unit_build" property="unitBuild" />
+        <result column="project_area" property="projectArea" />
+        <result column="project_address" property="projectAddress" />
+        <result column="longitude_latitude" property="longitudeLatitude" />
+        <result column="project_type" property="projectType" />
+        <result column="explore_stage" property="exploreStage" />
+        <result column="explore_level" property="exploreLevel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, project_code, project_name, project_leader, unit_build, project_area, project_address, longitude_latitude, project_type, explore_stage, explore_level
+    </sql>
+
+</mapper>

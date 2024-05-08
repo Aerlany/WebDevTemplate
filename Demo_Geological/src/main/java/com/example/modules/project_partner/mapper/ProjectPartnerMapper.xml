@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.modules.project_partner.mapper.ProjectPartnerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.modules.project_partner.model.ProjectPartner">
+        <id column="id" property="id" />
+        <id column="project_code" property="projectCode" />
+        <result column="partner_name" property="partnerName" />
+        <result column="partner_type" property="partnerType" />
+        <result column="telephone_number" property="telephoneNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, project_code, partner_name, partner_type, telephone_number
+    </sql>
+
+</mapper>

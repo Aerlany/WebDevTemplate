@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: Demo_Gological_Application
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/geographic_information_data?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+    username: root
+    password: 123456
+  # 解决swagger 报错
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  #  redis 密码配置
+  redis:
+    password: 1234
+
+server:
+  port: 8082
+
+# 配置日志为标准化输出
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
